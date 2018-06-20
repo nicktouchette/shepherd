@@ -779,6 +779,7 @@ var Tour = (function (_Evented2) {
 
       if (index === this.steps.length - 1) {
         this.hide(index);
+        this.currentStep = null;
         this.trigger('complete');
         this.done();
       } else {
@@ -796,6 +797,7 @@ var Tour = (function (_Evented2) {
     value: function cancel() {
       if (this.currentStep) {
         this.currentStep.hide();
+        this.currentStep = null;
       }
       this.trigger('cancel');
       this.done();
@@ -805,6 +807,7 @@ var Tour = (function (_Evented2) {
     value: function complete() {
       if (this.currentStep) {
         this.currentStep.hide();
+        this.currentStep = null;
       }
       this.trigger('complete');
       this.done();
@@ -833,10 +836,11 @@ var Tour = (function (_Evented2) {
 
       if (this.currentStep) {
         this.currentStep.hide();
-      } else {
-        document.body.classList.add('shepherd-active');
-        this.trigger('active', { tour: this });
+        this.currentStep = null;
       }
+
+      document.body.classList.add('shepherd-active');
+      this.trigger('active', { tour: this });
 
       Shepherd.activeTour = this;
 
@@ -858,10 +862,6 @@ var Tour = (function (_Evented2) {
             step: next,
             previous: this.currentStep
           });
-
-          if (this.currentStep) {
-            this.currentStep.hide();
-          }
 
           this.currentStep = next;
           next.show();

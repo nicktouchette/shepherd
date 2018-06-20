@@ -699,6 +699,7 @@ class Tour extends Evented {
 
     if (index === this.steps.length - 1) {
       this.hide(index);
+      this.currentStep = null;
       this.trigger('complete');
       this.done();
     } else {
@@ -714,6 +715,7 @@ class Tour extends Evented {
   cancel() {
     if (this.currentStep) {
       this.currentStep.hide();
+      this.currentStep = null;
     }
     this.trigger('cancel');
     this.done();
@@ -722,6 +724,7 @@ class Tour extends Evented {
   complete() {
     if (this.currentStep) {
       this.currentStep.hide();
+      this.currentStep = null;
     }
     this.trigger('complete');
     this.done();
@@ -744,10 +747,11 @@ class Tour extends Evented {
   show(key=0, forward=true) {
     if (this.currentStep) {
       this.currentStep.hide();
-    } else {
-      document.body.classList.add('shepherd-active');
-      this.trigger('active', {tour: this});
+      this.currentStep = null;
     }
+
+    document.body.classList.add('shepherd-active');
+    this.trigger('active', {tour: this});
 
     Shepherd.activeTour = this;
 

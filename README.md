@@ -1,4 +1,4 @@
-## Shepherd
+`## Shepherd
 
 [![GitHub
 version](https://badge.fury.io/gh/HubSpot%2Fshepherd.svg)](http://badge.fury.io/gh/HubSpot%2Fshepherd)
@@ -11,19 +11,19 @@ version](https://badge.fury.io/gh/HubSpot%2Fshepherd.svg)](http://badge.fury.io/
 
 __Dependencies__
 
-* __[Tether](https://github.com/HubSpot/tether)__
+* __[Tether](https://github.com/HubSpot/popper)__
 
 Installing via `npm` and `bower` will bring in the above dependencies as well.
 
 
 __npm__
 ```sh
-$ npm install tether-shepherd
+$ npm install popper-shepherd
 ```
 
 __bower__
 ```sh
-$ bower install tether-shepherd
+$ bower install popper-shepherd
 ```
 
 ## Usage

@@ -1,0 +1,12 @@
+=popper($themePrefix: "popper")
+  .#{ $themePrefix }-element, .#{ $themePrefix }-element *
+
+    &, &:after, &:before
+      box-sizing: border-box
+
+  .#{ $themePrefix }-element
+    position: absolute
+    display: none
+
+    &.#{ $themePrefix }-open
+      display: block

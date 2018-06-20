@@ -1,5 +1,5 @@
 {
-  "name": "tether-shepherd",
+  "name": "popper-shepherd",
   "version": "2.0.0",
   "description": "Guide your users through a tour of your app.",
   "authors": [
@@ -32,6 +32,6 @@
     "gulp-wrap-umd": "^0.2.1"
   },
   "dependencies": {
-    "popper.js": "^1.13.0"
+    "popper.js": "^1.14.3"
   }
 }

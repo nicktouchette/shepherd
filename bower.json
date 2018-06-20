@@ -1,5 +1,5 @@
 {
-  "name": "tether-popper",
+  "name": "popper-shepherd",
   "homepage": "https://github.com/HubSpot/shepherd",
   "authors": [
     "Zack Bloom <zackbloom@gmail.com>",
@@ -26,6 +26,6 @@
     "tests"
   ],
   "dependencies": {
-    "popper.js": "^1.0.0"
+    "popper.js": "^1.14.3"
   }
 }

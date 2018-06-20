@@ -1,5 +1,5 @@
 ## v2.0.0
-- Moved dependency from tether to popper.js
+- Moved dependency from popper to popper.js
 
 ## v1.7.0
 - Fixes bug where `buttons: false` resulted in the default Next button instead of showing the desired result of no buttons.
@@ -8,7 +8,7 @@
 - Patches issue where Tether anchor reference was being cached instead of reset when step is shown.
 
 ## v1.5.2
-- Adds functionality to pass an object `{element: el, on: tetherPositionString}` to tour step `attachTo` parameter.
+- Adds functionality to pass an object `{element: el, on: popperPositionString}` to tour step `attachTo` parameter.
 
 ## v1.5.1
 - Exposes `scrollTo` option in Eager

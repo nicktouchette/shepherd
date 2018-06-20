@@ -48,7 +48,6 @@
     .shepherd-theme-square-dark[x-placement^="left"] .popper__arrow {
       right: -16px;
       top: calc(50% - 16px);
-      margin-top: -16px;
       border-left-color: #232323;
       border-right: 0; }
   .shepherd-theme-square-dark[x-placement^="right"] {

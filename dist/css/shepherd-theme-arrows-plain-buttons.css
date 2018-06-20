@@ -51,7 +51,6 @@
     .shepherd-theme-arrows-plain-buttons[x-placement^="left"] .popper__arrow {
       right: -16px;
       top: calc(50% - 16px);
-      margin-top: -16px;
       border-left-color: #fff;
       border-right: 0; }
   .shepherd-theme-arrows-plain-buttons[x-placement^="right"] {
